@@ -5,9 +5,17 @@
     <title>Table using div Elements</title>
     
     <style>
+        .row {
+            float: left;
+        }
+        
         div {
             text-align:center;
+            vertical-align: middle;
             border: 1px white solid;
+            height:2.5em;
+            font-family: sans-serif;
+            font-size:1.2em;
         }
         
         .version {
@@ -45,20 +53,75 @@
             width: 40px;
             float:left;
         }
+        
+        .fragment{
+            background-color:#b3ffda;
+            width: 380px;
+            float:left;
+        }
+        
+        .ttl{
+            background-color:#ffbb99;
+            width: 250px;
+            float:left;
+        }
+        
+        .protocol {
+            background-color:#e6e6ff;
+            width: 250px;
+            float:left;
+        }
+        
+        .checksum {
+            background-color:#ffccff;
+            width: 500px;
+            float:left;
+        }
+        
+        .source {
+            background-color:#ccffcc;
+            width: 1000px;
+            float:left;
+        }
+        
+        .destination {
+            background-color:#ffe6cc;
+            width: 1000px;
+            float:left;
+        }
+        
     </style>
 </head>
 
 <body>
 
-    <div class="version">Version</div>
-    <div class="ihl">IHL</div>
-    <div class="qos">QoS</div>
-    <div class="length">Length</div>
-
-    <div class="id">ID</div>
-    <div class="threeBlue">0</div>
-    <div class="threeBlue">DF</div>
-    <div class="threeBlue">MF</div>
+    <div class="row">
+        <div class="version">Version</div>
+        <div class="ihl">IHL</div>
+        <div class="qos">QoS</div>
+        <div class="length">Length</div>
+    </div>
     
+    <div class="row">
+        <div class="id">ID</div>
+        <div class="threeBlue">0</div>
+        <div class="threeBlue">DF</div>
+        <div class="threeBlue">MF</div>
+        <div class="fragment">Fragment Offset</div>
+    </div>
+    
+    <div class="row">
+        <div class="ttl">TTL</div>
+        <div class="protocol">Protocol</div>
+        <div class="checksum">Checksum</div>
+    </div>
+    
+    <div class="row">
+        <div class="source">Source IP</div>
+    </div>
+    
+    <div class="row">
+        <div class="destination">Destination IP</div>
+    </div>
 </body>
 </html>
