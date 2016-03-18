@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>CSS Examples</title>
+    
+    <style>
+        
+        .padding {
+            padding: 20px 30px 50px 100px;
+            background-color: lightblue;
+        }
+        
+        @media only screen and (max-width: 750px) {
+            .padding {
+                background-color: lightcoral;
+            }  
+        }
+        
+        .text {
+            padding-top:15px;
+            letter-spacing:3px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="padding">
+        This is an example of padding, note the space around this text. ps. try dragging this window in to see media queries being used.
+    </div>
+    
+    <div class="text">
+        Text can be spaced out using the 'letter-spacing' property
+    </div>
+
+</body>
+</html>
