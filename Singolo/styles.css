@@ -55,6 +55,27 @@ body {
     padding-bottom: 50px;
 }
 
+.services {
+    max-width: 950px;
+    margin: auto;
+    color: #666d89;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul img {
+    float:left;
+    padding-right:10px;
+    padding-bottom: 80px;
+}
+
+ul li {
+    float:left;
+    width: 280px;
+    list-style: none;
+    padding: 10px;
+}
+
 @media screen and (max-width: 670px) {
     .header {
         height:120px;
